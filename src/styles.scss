@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-mdc-simple-snack-bar{
+  direction: rtl;
+}
+.mdc-button__label{
+  color: white;
+}
+.mdc-snackbar{
+  position: absolute !important;
+  bottom: -80px !important;
+}
+.success-snackbar .mdc-snackbar__surface  {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+.error-snackbar .mdc-snackbar__surface  {
+  background-color: #f44336 !important;
+  color: white;
+}
+.cdk-overlay-container, .cdk-global-overlay-wrapper {
+  //transform: translateY(200px);
+}

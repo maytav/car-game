@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="road">
+    <img alt="car" class="car-image" src="assets/car.png" [style.margin-left.px]="carPosition">
+    <traffic-light></traffic-light>
+  </div>
+  <div class="buttons">
+    <button (click)="moveCar('backward')">אחורה</button>
+    <button (click)="moveCar('forward')">קדימה</button>
+
+  </div>
+  <p class="message" [class.warning-message]="warningMessage" *ngIf="message">{{ message }}</p>
+</div>
